@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 1rem;
+        }
+
+        nav ul li button {
+            color: #fff;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            display: none;
+        }
+
+        #home {
+            display: block;
+            height: 100vh;
+            background: url(http://getwallpapers.com/wallpaper/full/4/0/5/833712-full-size-simple-desktop-wallpaper-1920x1080-for-xiaomi.jpg);
+            color: #fff;
+            text-align: center;
+            background-size:auto;
+        }
+
+        .intro {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .intro p {
+            font-size: 1.2rem;
+            margin: 1rem 0 0;
+        }
+
+        .project, .skill, .contact-detail {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .contact-detail p {
+            margin: 0.5rem 0;
+        }
+
+        form label {
+            margin-bottom: 0.5rem;
+        }
+
+        form input, form textarea {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .section button {
+            width :150px;
+            height:150px;
+            background-color:rgb(35, 15, 3);
+            color: #fff;
+            border: black;
+            cursor: pointer;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+
+        ul {
+            padding-left: 1rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+        p{
+            font-size: large;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="navigateTo('home')">Home</button></li>
+                <li><button onclick="navigateTo('about')">About Me</button></li>
+                <li><button onclick="navigateTo('projects')">Projects</button></li>
+                <li><button onclick="navigateTo('skills')">Skills</button></li>
+                <li><button onclick="navigateTo('contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="section">
+        <div class="intro">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Hi, I'm Shristi Negi, a passionate web developer and computer engineering student</p>
+        </div>
+    </section>
+
+    <section id="about" class="section container">
+        <h2>About Me</h2>
+        <p>I am enthusiastic about learning new things. I  am currently pursuing B Tech in computer science and AIML-IOT.
+            <br>   and I'm constantly seeking new opportunities to learn and evolve.<br>
+            i am continously looking for challenges and doing projects makes me able to develop,<br>
+            logical reasoning and problem solving capabilities. 
+        </p>
+    </section>
+
+    <section id="projects" class="section container">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Interactive Web Page</h3>
+            <p>In this using HTML ,CSS and Javascript i created an interactive page with srollable color changing web page <br>
+            and it also has a navigation bar.</p>
+        </div>
+        <div class="project"><h3>Tik Tac Toe game
+        </h3><p>The Tic Tac Toe game is a classic two-player game where the objective is to be the first player to get three of your symbols in a row,<br>
+             either horizontally, vertically, or diagonally.<br>
+              This project aims to recreate the game using HTML,JavaScript and CSS</p></div>
+              <div class="project"><h3>StopWatch</h3>
+            <p>using HTML and JavaScript in created a stopwatch which can taken lap also <br>
+            calculating from hours to milliseconds</p></div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>This mainly focuses on highlighting my project work  and my skills </p>
+        </div>
+        
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <p><button onclick="navigateTo('html')">HTML</button>
+            <button onclick="navigateTo('css')">CSS</button>
+            <button onclick="navigateTo('javascript')">Javascript</button>
+            <button onclick="navigateTo('python')">Python</button>
+            </p>
+        <section id ='html' class = "section">
+            <p>I have extensive experience in HTML, which is the backbone of web development.<br>
+                 My proficiency in HTML allows me to create well-structured, semantic, and accessible web pages.<br>
+                  Here are some highlights of my skills and experience with HTML</p>
+        </section>
+        <section id ='css' class = "section container">
+            <h3>CSS</h3>
+            <p>Cascading style sheets or CSS <br>
+                 enables me to create visually appealing, responsive, and user-friendly web pages.<br>
+                 My proficiency with CSS helps me turn design concepts into reality with precision and creativity. </p>
+        </section>
+        <section id ='html' class = "section container">
+            <h3>Javascript</h3>
+            <p>I have extensive experience in JavaScript, <br>
+                the programming language that enables dynamic and interactive web applications. 
+                <br>My proficiency in JavaScript allows me to build complex functionalities, <br>
+                and create seamless user experiences. </p>
+        </section>
+        <section id ='html' class = "section container">
+            <h3>Python</h3>
+            <p> Python has a rich set of libraries and frameworks <br>
+                 that extend its functionality.<br>
+                enabling me to work with multiple applications </p>
+        </section>
+    </section>
+
+    <section id="contact" class="section container">
+        <h2>Contact</h2>
+        <div class="contact-detail">
+            <p>Email: shristinegi658@gmail.com</p>
+            <p>Phone:8882160</p>
+            <p>Linked profile: www.linkedin.com/in/shristi-negi-22884a289</p>
+        </div>
+       
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Shristi Negi</p>
+    </footer>
+
+    <script>
+        function navigateTo(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
